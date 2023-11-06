@@ -7,13 +7,23 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SlideNumberPuzzleView: View {
+    @StateObject var game = SlideNumberPuzzleGame()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Slide Number Puzzle")
+                .font(.largeTitle)
+                .padding()
+            
+            LazyVGrid(columns: Array(repeating: GridItem(), count: 4), spacing: 5) {
+                ForEach(0..<16, id: \.self) { index in
+                    PuzzleTileView(number: game.tiles[index])
+                        .onTapGesture {
+                            game.moveTile(at: index)
+                        }
+                }
+            }
         }
         .padding()
     }

@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		BD3663EA2AF6A1520037AA1F /* Slide_Number_PuzzleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3663E92AF6A1520037AA1F /* Slide_Number_PuzzleApp.swift */; };
-		BD3663EC2AF6A1520037AA1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3663EB2AF6A1520037AA1F /* ContentView.swift */; };
 		BD3663EE2AF6A1580037AA1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3663ED2AF6A1580037AA1F /* Assets.xcassets */; };
 		BD3663F12AF6A1580037AA1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3663F02AF6A1580037AA1F /* Preview Assets.xcassets */; };
+		BD3663F82AF6A2110037AA1F /* SlideNumberPuzzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3663F72AF6A2110037AA1F /* SlideNumberPuzzleView.swift */; };
+		BD3663FA2AF6A25A0037AA1F /* SlideNumberPuzzleGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3663F92AF6A25A0037AA1F /* SlideNumberPuzzleGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD3663E62AF6A1520037AA1F /* Slide_Number_Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Slide_Number_Puzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD3663E92AF6A1520037AA1F /* Slide_Number_PuzzleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide_Number_PuzzleApp.swift; sourceTree = "<group>"; };
-		BD3663EB2AF6A1520037AA1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD3663ED2AF6A1580037AA1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD3663F02AF6A1580037AA1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD3663F72AF6A2110037AA1F /* SlideNumberPuzzleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideNumberPuzzleView.swift; sourceTree = "<group>"; };
+		BD3663F92AF6A25A0037AA1F /* SlideNumberPuzzleGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideNumberPuzzleGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				BD3663E92AF6A1520037AA1F /* Slide_Number_PuzzleApp.swift */,
-				BD3663EB2AF6A1520037AA1F /* ContentView.swift */,
+				BD3663F72AF6A2110037AA1F /* SlideNumberPuzzleView.swift */,
+				BD3663F92AF6A25A0037AA1F /* SlideNumberPuzzleGame.swift */,
 				BD3663ED2AF6A1580037AA1F /* Assets.xcassets */,
 				BD3663EF2AF6A1580037AA1F /* Preview Content */,
 			);
@@ -137,8 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD3663EC2AF6A1520037AA1F /* ContentView.swift in Sources */,
+				BD3663FA2AF6A25A0037AA1F /* SlideNumberPuzzleGame.swift in Sources */,
 				BD3663EA2AF6A1520037AA1F /* Slide_Number_PuzzleApp.swift in Sources */,
+				BD3663F82AF6A2110037AA1F /* SlideNumberPuzzleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
