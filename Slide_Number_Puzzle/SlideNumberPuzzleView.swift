@@ -15,7 +15,7 @@ struct SlideNumberPuzzleView: View {
             Text("New Game")
                 .font(.system(size: 40, weight: .bold))
                 .padding()
-                .foregroundColor(.green)
+                .foregroundColor(.brown)
             
             LazyVGrid(columns: Array(repeating: GridItem(), count: 4), spacing: 5) {
                 ForEach(0..<16, id: \.self) { index in
@@ -31,10 +31,25 @@ struct SlideNumberPuzzleView: View {
                 .foregroundColor(.orange)
             }
             Spacer()
-            Text("You Win!!")
-                .font(.system(size: 40, weight: .bold))
-                .foregroundColor(.red)
-                .opacity(game.isWinning() ? 1.0 : 0.0)
+            
+            if game.isWinning() {
+                Text("You Win!!")
+                    .font(.system(size: 40, weight: .bold))
+                    .foregroundColor(.red)
+                
+                Button(action: {
+                    game.shufflePuzzles()
+                }) {
+                    Text("Restart Game")
+                        .font(.system(size: 24, weight: .bold))
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.green)
+                        .cornerRadius(10)
+                }
+            }
+            Spacer()
+           
             
             
             Text("Moves: \(game.moves)")
@@ -46,6 +61,8 @@ struct SlideNumberPuzzleView: View {
         .onAppear {
             game.shufflePuzzles()
         }
+        
+        
     }
 }
 
