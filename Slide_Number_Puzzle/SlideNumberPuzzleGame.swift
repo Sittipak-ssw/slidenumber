@@ -11,8 +11,8 @@ class SlideNumberPuzzleGame: ObservableObject {
     @Published var moves: Int = 0
     
     func shufflePuzzles() {
-            puzzles.shuffle()
-           moves = 0
+        puzzles.shuffle()
+        moves = 0
        }
     
     func isWinning() -> Bool {
