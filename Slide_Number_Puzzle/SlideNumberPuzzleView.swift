@@ -2,7 +2,8 @@
 //  SlideNumberPuzzleView.swift
 //  Slide_Number_Puzzle
 //
-//  Created by Sittipak Srisawas on 4/11/2566 BE.
+//  Created by Sittipak Srisawas 6410742032 and
+//  Narathip Jaroensuk 6410742412 on 4/11/2566 BE.
 //
 
 import SwiftUI
@@ -38,7 +39,7 @@ struct SlideNumberPuzzleView: View {
                     .foregroundColor(.red)
                 
                 Button(action: {
-                    game.shufflePuzzles()
+                    game.restart()
                 }) {
                     Text("Restart Game")
                         .font(.system(size: 24, weight: .bold))

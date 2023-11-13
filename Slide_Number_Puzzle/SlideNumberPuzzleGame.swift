@@ -2,7 +2,8 @@
 //  SlideNumberPuzzleGame.swift
 //  Slide_Number_Puzzle
 //
-//  Created by Sittipak Srisawas on 4/11/2566 BE.
+//  Created by Sittipak Srisawas 6410742032 and
+//  Narathip Jaroensuk 6410742412 on 4/11/2566 BE.
 //
 import SwiftUI
 
@@ -11,9 +12,15 @@ class SlideNumberPuzzleGame: ObservableObject {
     @Published var moves: Int = 0
     
     func shufflePuzzles() {
+        //puzzles.shuffle()
+        moves = 0
+       }
+    
+    func restart() {
         puzzles.shuffle()
         moves = 0
        }
+    
     
     func isWinning() -> Bool {
         return puzzles == Array(1...15) + [0] 
