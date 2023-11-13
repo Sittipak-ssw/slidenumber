@@ -12,7 +12,7 @@ class SlideNumberPuzzleGame: ObservableObject {
     @Published var moves: Int = 0
     
     func shufflePuzzles() {
-        //puzzles.shuffle()
+        puzzles.shuffle()
         moves = 0
        }
     
